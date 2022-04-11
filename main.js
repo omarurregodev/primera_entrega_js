@@ -20,7 +20,7 @@ function newUser() {
 			perfil='';
 
 			for (let i = 0; i < userArray.length; i++) {
-			    perfil = perfil + "<div class='card mx-2' style='width: 18rem;'> <div class='card-body'> <h5 class='card-title'>"+userArray[i].name+"</h5> <p class='card-text'>"+userArray[i].age+"</p> <p class='card-text'>"+userArray[i].career+"</p> <p class='card-text'>"+userArray[i].about+"</p> </div> <div class='card-body'> </div> </div>"; 
+			    perfil = perfil + "<div class='card mx-2' style='width: 18rem;'> <div class='card-body'> <h5 class='card-title'>"+userArray[i].name+"</h5> <p class='card-text'>"+userArray[i].age+"</p> <p class='card-text'>"+userArray[i].career+"</p> <p class='card-text'>"+userArray[i].about+"</p> </div> <div class='card-body'> <button class='btn btn-danger'><i class='fa-solid fa-user-xmark'></i>  Eliminar</button></button></div> </div>"; 
 			}
 
 			console.log(perfil)
