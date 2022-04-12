@@ -37,7 +37,14 @@ function graficar(usuarios){
 }
 
 function filterAZ() {
-	userArray.sort();
+
+	userArray.sort( function filtro(a, b) {
+		if (a.name > b.name) return 1;
+		if (a.name < b.name) return -1;
+		
+		return result = 0;
+	});
+	
 	graficar(userArray);
 }
 
@@ -55,7 +62,7 @@ function buscar() {
 }
 
 function deleteUser(id){
-	alert('eliminaras el '+id+" estas seguro?");
+	alert('Eliminaras al usuario '+userArray[id].name+", estas seguro?");
 	userArray.splice(id,1);
 	graficar(userArray);
 
