@@ -38,18 +38,13 @@
 	<div class="container-fluid p-5">
 		<div class="container">
 			<div class="container-fluid">
-				<h1 class="h1 text-center">Perfiles Creados</h1>	
+				<h1 class="h1 text-center">Perfiles Creados</h1>
+				<input class="form-control" type="text" name="" placeholder="Buscar Perfil" id="busqueda" value="" onchange="buscar()">	
 			</div>
 			<div class="container-fluid p-3">
-				<div class="dropdown">
-					<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Filtrar por</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-						<li><a class="dropdown-item" href="#">A-Z</a></li>
-						<li><a class="dropdown-item" href="#">Z-A</a></li>
-					</ul>
-				</div>
+				<button class="btn btn-primary" onclick="filterAZ();">Filtro A-Z</button>
 			</div>
-			<div class="container d-flex flex-row" id="perfiles">
+			<div class="container d-flex flex-wrap" id="perfiles">
 				
 			</div>
 		</div>
